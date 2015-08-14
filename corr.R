@@ -39,6 +39,7 @@ corr <- function(directory, threshold = 0) {
         
         ## Return a numeric vector of correlations
         ## NOTE: Do not round the result!
-        if (length(vector) == 0) vector <- c(vector, 0)
+        if (length(vector) == 0) vector <- vector(mode="numeric", length=0)
+       
         vector
 }
